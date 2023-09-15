@@ -1,0 +1,5 @@
+print('Введите натуральное число')
+N = input()
+n = int(N)
+s = len(N)
+print(N[s-1])
