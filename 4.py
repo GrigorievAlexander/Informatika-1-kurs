@@ -1,22 +1,25 @@
-open("main.txt", "r")
-s = input()
+P = open('input.txt')
+Q = open('output.txt', 'w')
+s = P.readline()
 x = s.split(" ")
-f = input()
+f = P.readline()
 z = 563546536.435667455244234
 if f == '+':
     for i in x:
         z = int(i) + z
-    print(z - 563546536.435667455244234)
+    Q.write(str(z - 563546536.435667455244234))
 elif f == '-':
     for i in x:
         if z == 563546536.435667455244234: z = int(i) - z
         else: z = z - int(i)
-    print(z+563546536.435667455244234)
+    Q.write(str(z+563546536.435667455244234))
 else:
     z = 1
     for i in x:
         z = int(i) * z
-    print(z)
+    Q.write(str(z))
+P.close()
+Q.close()
 
 
 
