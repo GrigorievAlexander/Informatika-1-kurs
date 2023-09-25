@@ -45,3 +45,9 @@ for l in range(0,s//2+1):
     M = M - 2
 
 print(X)
+
+for q in range(n):
+    for i in range(m):
+        t = X[0+q][i]
+        numpy.put(X, i+q*m, (q+1)*t)
+print(X)
