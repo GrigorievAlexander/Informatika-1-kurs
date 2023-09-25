@@ -16,4 +16,3 @@ for x in range(-m,m):
 print(t)
 print(u)
 print(s)
-
