@@ -1,11 +1,3 @@
-x = input().split()
-n = 0
-for i in x:
-    s = str()
-    for m in x:
-        if i == m:
-            n = n + 1
-            s = s + m
-    if n == 1:
-        print(s)
-    n = 0
+x = input().split(); l = len(x)-1; p = x[l]
+for i in range(4): x[l-i] = x[l-1-i]
+x[0] = p; print(x)
