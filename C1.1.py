@@ -13,7 +13,7 @@ for i in range(len(X)):
     for l in range(1,m+1):
         x = str(X[i])
         if len(x) == l:
-            x = x + '0'*(m-l)
+            x = x + 'x[0]'*(m-l)
             Y = Y + [x]
             Z = Z + [m-l]
 
@@ -29,4 +29,3 @@ for i in range(len(X)):
     y = str(Y0[i])
     s = s + y[0:m-Z0[i]]
 print(s)
-
